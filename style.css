@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+  } 
+  .game-container {
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+    border: 10px solid white; /* White border for the grid */
+    padding: 10px;
+    background-color: black; /* Inside part remains black */
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: black; /* Inside of the cells remains black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border: 2px solid white; /* White borders between the cells */
+  }
+  
+  
+  .cell:hover {
+    background-color: grey;
+  }
+  
+  .status {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: yellow;
+  }
+  
+  .mode-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .mode-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .restart-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .restart-btn:hover {
+    background-color: #218838;
+  }
+  
+  .cell {
+    color: yellow; /* X and O color */
+  } 
+  .line-active {
+    transform: scaleY(1);
+  }
+  .winning-cell {
+    background-color: yellow !important; /* Yellow background for winning combination */
+    color: black !important; /* White color for the X or O */
+  }
+  
